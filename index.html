@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم | نظام التسويق بالنقاط</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="stylesheet" href="../src/css/sidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" src="../src/js/main.js"></script>
+</head>
+<body>
+  <!-- الشريط الجانبي -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="user-avatar">أ</div>
+      <div>
+        <div class="user-name">أسامة عبدالقادر</div>
+        <div class="user-role">مالك النظام</div>
+      </div>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+      <li><a href="products.html"><i class="fas fa-store"></i> المتجر</a></li>
+      <li><a href="add-product.html"><i class="fas fa-plus-circle"></i> إضافة منتج</a></li>
+      <li><a href="network.html"><i class="fas fa-network-wired"></i> شبكتي التسويقية</a></li>
+      <li><a href="profile.html"><i class="fas fa-user"></i> ملفي الشخصي</a></li>
+      <li><a href="admin.html"><i class="fas fa-crown"></i> لوحة المالك</a></li>
+      <li><a href="#"><i class="fas fa-chart-line"></i> التقارير والإحصائيات</a></li>
+      <li><a href="#"><i class="fas fa-coins"></i> نظام النقاط</a></li>
+      <li><a href="#"><i class="fas fa-gift"></i> المكافآت والهدايا</a></li>
+      <li><a href="#"><i class="fas fa-cog"></i> الإعدادات</a></li>
+      <li><a href="#"><i class="fas fa-question-circle"></i> الدعم الفني</a></li>
+    </ul>
+  </aside>
+
+  <!-- الهيدر -->
+  <header class="header">
+    <div class="logo">
+      <i class="fas fa-chart-network"></i>
+      <h1>نظام التسويق بالنقاط</h1>
+    </div>
+    
+    <div class="header-actions">
+      <div class="points-display">
+        <i class="fas fa-coins"></i>
+        <span>1,240 نقطة</span>
+      </div>
+      
+      <div class="level-display">
+        <i class="fas fa-trophy"></i>
+        <span>المستوى 5</span>
+      </div>
+      
+      <div class="notifications">
+        <i class="fas fa-bell"></i>
+        <span class="notification-count">3</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="main-content">
+    <div class="dashboard">
+      <h1 class="page-title"><i class="fas fa-tachometer-alt"></i> لوحة التحكم</h1>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fas fa-coins"></i>
+          <div class="stat-number">1,240</div>
+          <div class="stat-label">نقاطك الحالية</div>
+        </div>
+        
+        <div class="stat-card">
+          <i class="fas fa-trophy"></i>
+          <div class="stat-number">5</div>
+          <div class="stat-label">مستواك الحالي</div>
+        </div>
+        
+        <div class="stat-card">
+          <i class="fas fa-users"></i>
+          <div class="stat-number">142</div>
+          <div class="stat-label">أعضاء شبكتك</div>
+        </div>
+        
+        <div class="stat-card">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="stat-number">24</div>
+          <div class="stat-label">مبيعات هذا الشهر</div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title"><i class="fas fa-chart-line"></i> تطور النقاط</h2>
+            </div>
+            <div class="card-body">
+              <canvas id="pointsChart"></canvas>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title"><i class="fas fa-bullhorn"></i> أحدث الإشعارات</h2>
+            </div>
+            <div class="card-body">
+              <div class="notification-list">
+                <div class="notification-item">
+                  <i class="fas fa-user-plus text-success"></i>
+                  <div>
+                    <p>محمد أحمد انضم إلى شبكتك</p>
+                    <small>منذ 2 ساعة</small>
+                  </div>
+                </div>
+                
+                <div class="notification-item">
+                  <i class="fas fa-coins text-warning"></i>
+                  <div>
+                    <p>لقد ربحت 120 نقطة من عملية بيع</p>
+                    <small>منذ 5 ساعات</small>
+                  </div>
+                </div>
+                
+                <div class="notification-item">
+                  <i class="fas fa-trophy text-primary"></i>
+                  <div>
+                    <p>أنت على بعد 12 عضو من الترقية للمستوى 6</p>
+                    <small>منذ يوم</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title"><i class="fas fa-store"></i> أحدث المنتجات</h2>
+          <a href="products.html" class="btn btn-secondary">عرض الكل</a>
+        </div>
+        <div class="card-body">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../src/images/product-placeholder.png" alt="هاتف ذكي">
+              </div>
+              <div class="product-info">
+                <h3>هاتف ذكي فاخر</h3>
+                <div class="product-price">3,499 ر.س</div>
+                <div class="product-points">+350 نقطة</div>
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../src/images/product-placeholder.png" alt="لابتوب">
+              </div>
+              <div class="product-info">
+                <h3>لابتوب قوي</h3>
+                <div class="product-price">4,299 ر.س</div>
+                <div class="product-points">+430 نقطة</div>
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../src/images/product-placeholder.png" alt="سماعات">
+              </div>
+              <div class="product-info">
+                <h3>سماعات لاسلكية</h3>
+                <div class="product-price">699 ر.س</div>
+                <div class="product-points">+70 نقطة</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // تحميل بيانات المستخدم من Firebase
+    document.addEventListener('DOMContentLoaded', function() {
+      // هنا سيتم جلب البيانات الحقيقية من Firebase
+      console.log("جلب بيانات المستخدم من قاعدة البيانات...");
+    });
+  </script>
+</body>
+</html>
